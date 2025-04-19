@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#D9534F"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvChooseQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chose a quiz:"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:fontFamily="cursive"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp" />
+
+    <GridLayout
+        android:id="@+id/gridQuizButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvChooseQuiz"
+        android:layout_marginTop="24dp"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnQuiz1"
+            style="@style/QuizButtonStyle"
+            android:text="1" />
+        <Button
+            android:id="@+id/btnQuiz2"
+            style="@style/QuizButtonStyle"
+            android:text="2" />
+        <Button
+            android:id="@+id/btnQuiz3"
+            style="@style/QuizButtonStyle"
+            android:text="3" />
+        <Button
+            android:id="@+id/btnQuiz4"
+            style="@style/QuizButtonStyle"
+            android:text="4" />
+        <Button
+            android:id="@+id/btnQuiz5"
+            style="@style/QuizButtonStyle"
+            android:text="5" />
+        <Button
+            android:id="@+id/btnQuiz6"
+            style="@style/QuizButtonStyle"
+            android:text="6" />
+        <Button
+            android:id="@+id/btnQuiz7"
+            style="@style/QuizButtonStyle"
+            android:text="7" />
+        <Button
+            android:id="@+id/btnQuiz8"
+            style="@style/QuizButtonStyle"
+            android:text="8" />
+        <Button
+            android:id="@+id/btnQuiz9"
+            style="@style/QuizButtonStyle"
+            android:text="9" />
+        <Button
+            android:id="@+id/btnQuiz10"
+            style="@style/QuizButtonStyle"
+            android:text="10" />
+        <Button
+            android:id="@+id/btnQuiz11"
+            style="@style/QuizButtonStyle"
+            android:text="11" />
+        <Button
+            android:id="@+id/btnQuiz12"
+            style="@style/QuizButtonStyle"
+            android:text="12" />
+
+    </GridLayout>
+
+</RelativeLayout>
