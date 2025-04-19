@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#D9534F"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello\nwelcome back"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:fontFamily="cursive"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="24dp"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#D3D3D3"
+        android:backgroundTintMode="src_over"
+        android:shape="rectangle"
+        android:elevation="4dp"
+        android:radius="16dp">
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Settings"
+            android:textColor="#D9534F"
+            android:textSize="20sp"
+            android:fontFamily="cursive"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Start"
+            android:textColor="#D9534F"
+            android:textSize="20sp"
+            android:fontFamily="cursive"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="exit"
+            android:textColor="#D9534F"
+            android:textSize="20sp"
+            android:fontFamily="cursive"
+            android:background="@drawable/rounded_button" />
+
+    </LinearLayout>
+
+</RelativeLayout>
