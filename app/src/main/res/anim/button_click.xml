@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+    
+    <!-- First animation: Quick scale down with fade -->
+    <set android:ordering="together">
+        <scale
+            android:duration="100"
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toXScale="0.95"
+            android:toYScale="0.95"
+            android:interpolator="@android:anim/decelerate_interpolator" />
+        <alpha
+            android:duration="100"
+            android:fromAlpha="1.0"
+            android:toAlpha="0.8" />
+    </set>
+
+    <!-- Second animation: Bounce back with fade in -->
+    <set android:ordering="together">
+        <scale
+            android:duration="150"
+            android:fromXScale="0.95"
+            android:fromYScale="0.95"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toXScale="1.0"
+            android:toYScale="1.0"
+            android:interpolator="@android:anim/bounce_interpolator" />
+        <alpha
+            android:duration="150"
+            android:fromAlpha="0.8"
+            android:toAlpha="1.0" />
+    </set>
+</set>
